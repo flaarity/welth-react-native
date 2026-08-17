@@ -134,6 +134,7 @@ export default function SignUpScreen() {
           <TouchableOpacity
             onPress={handleCodeSubmit(onVerifyPress)}
             disabled={isLoading}
+            // activeOpacity={0.7}
             className="w-full bg-blue-500 py-4 rounded-xl items-center mb-4"
           >
             {isLoading ? (

@@ -15,7 +15,7 @@ import {
   View,
 } from "react-native";
 
-export default function SignInScreen() {
+export default function SignIn() {
   const { signIn, errors, fetchStatus } = useSignIn();
   const router = useRouter();
 
@@ -230,7 +230,7 @@ export default function SignInScreen() {
         <TouchableOpacity
           onPress={handleSubmit(onSignInPress)}
           disabled={isLoading}
-          className="w-full bg-blue-500 py-4 rounded-xl items-center mb-4"
+          className="w-full bg-brand-blue py-4 rounded-xl items-center mb-4"
         >
           {isLoading ? (
             <ActivityIndicator color="white" />
@@ -244,7 +244,7 @@ export default function SignInScreen() {
             Don&apos;t have an account?{" "}
           </Text>
           <Link href="/sign-up">
-            <Text className="text-blue-500 font-semibold">Sign Up</Text>
+            <Text className="text-brand-blue font-semibold">Sign Up</Text>
           </Link>
         </View>
       </View>

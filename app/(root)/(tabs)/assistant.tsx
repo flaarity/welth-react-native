@@ -1,12 +1,10 @@
 import React from "react";
 import { Text, View } from "react-native";
 
-const AssistantScreen = () => {
+export default function AssistantScreen() {
   return (
     <View>
       <Text>AssistantScreen</Text>
     </View>
   );
-};
-
-export default AssistantScreen;
+}

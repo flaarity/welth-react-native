@@ -1,12 +1,10 @@
 import React from "react";
 import { Text, View } from "react-native";
 
-const AddTransaction = () => {
+export default function AddTransactionScreen() {
   return (
     <View>
-      <Text>AddTransaction</Text>
+      <Text>AddTransactionScreen</Text>
     </View>
   );
-};
-
-export default AddTransaction;
+}
